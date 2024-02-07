@@ -1,8 +1,5 @@
-const removeFromArray = function(a, ...manyMoreArgs) {
-  const index = [a, ...manyMoreArgs];
-  let arr = [""];
-  let value = 0;
-  arr = arr.filter((value, index));
+const removeFromArray = function(array, ...args) {
+  return array.filter(val => !args.includes(val));
 };
 
 // Do not edit below this line
